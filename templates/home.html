@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction Project</title>
+    <style>
+        /* General Styling */
+        body {
+            background-color: #2b2b2b; /* Dark background for crop theme */
+            color: #f0f0f0; /* Light text for readability */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container Styling */
+        .container {
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+            background-color: #34495e; /* Slightly lighter dark gray */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Header Styling */
+        h1 {
+            font-size: 3rem;
+            color: #a9dfbf; /* Soft green to represent crops */
+            margin-bottom: 20px;
+        }
+
+        /* Button Styling */
+        button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            margin: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #27ae60; /* Green button for crop theme */
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Button Hover Effect */
+        button:hover {
+            background-color: #2ecc71; /* Lighter green on hover */
+        }
+
+        /* Fade In Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Crop Prediction Project</h1>
+        <!-- Updated Links -->
+        <a href="/prediction"><button>Make Prediction</button></a>
+        <a href="/showdata"><button>Show Data</button></a>
+    </div>
+</body>
+</html>
