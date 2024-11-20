@@ -1,6 +1,20 @@
-FROM python:3.12
-COPY . /app
+# Use an official Python runtime as a parent image
+FROM python:3.9-slim
+
+# Set the working directory in the container
 WORKDIR /app
-RUN pip install -r requirements.txt
-EXPOSE $PORT
-CMD gunicorn --workers=4 --bind 0.0.0.0:$PORT app:app
+
+# Copy the current directory contents into the container
+COPY . /app
+
+# Install any required packages
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Expose the port your app runs on
+EXPOSE 5050
+
+# Define environment variable
+ENV FLASK_ENV=production
+
+# Run the application
+CMD ["python", "app.py"]
